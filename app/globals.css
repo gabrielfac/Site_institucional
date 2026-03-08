@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-rg-primary: #172A3A;
+  --color-rg-primary-dark: #0F1C27;
+  --color-rg-accent: #FF6B00;
+  --color-rg-accent-hover: #E56000;
+  --color-rg-bg-light: #F8FAFC;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-rg-primary);
+}
