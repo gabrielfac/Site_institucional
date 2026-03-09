@@ -95,9 +95,8 @@ export default function WhatsAppSim() {
       {/* Header */}
       <div className="bg-[#075E54] text-white px-4 py-3 flex items-center justify-between z-10 shadow-md">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-slate-300 rounded-full flex items-center justify-center overflow-hidden">
-            <img src="/rg-logo.jpg" alt="RG IA" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling?.classList.remove('hidden'); }} />
-            <User size={20} className="text-slate-500 hidden" />
+          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden p-1">
+            <img src="/assets/images/logo.png" alt="RG IA" className="w-full h-full object-contain" />
           </div>
           <div>
             <h3 className="font-semibold text-sm leading-tight">IA RG Soluções</h3>
