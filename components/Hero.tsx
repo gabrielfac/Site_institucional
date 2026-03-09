@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { ArrowRight, Shield, Zap, Server } from 'lucide-react';
+import Link from "next/link";
+import { ArrowRight, Shield, Zap, Server } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -18,15 +18,20 @@ export default function Hero() {
               <span className="w-2 h-2 rounded-full bg-rg-accent"></span>
               Engenharia de Software B2B & Gov
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-rg-primary leading-[1.1] mb-6">
-              Modernização e Automação de <span className="text-transparent bg-clip-text bg-gradient-to-r from-rg-primary to-rg-accent">Processos Críticos</span>
+              Modernização e Automação de{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rg-primary to-rg-accent">
+                Processos
+              </span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
-              Eficiência operacional escalável para o setor corporativo privado e transformação digital com segurança e governança para a gestão pública.
+              Eficiência operacional escalável para o setor corporativo privado
+              e transformação digital com segurança e governança para a gestão
+              pública.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="#simulacao"
@@ -39,20 +44,20 @@ export default function Hero() {
                 href="#solucoes"
                 className="inline-flex justify-center items-center gap-2 bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-md text-base font-medium transition-all"
               >
-                Conhecer Arquitetura
+                Explorar Soluções
               </Link>
             </div>
 
-            <div className="mt-16 pt-8 border-t border-slate-100 flex flex-wrap gap-8 items-center text-sm font-medium text-slate-500">
-              <div className="flex items-center gap-2">
+            <div className="mt-16 pt-8 border-t border-slate-100 flex flex-col sm:flex-row gap-4 sm:gap-5 lg:gap-6 items-start sm:items-center text-sm font-medium text-slate-500">
+              <div className="flex items-center gap-2 whitespace-nowrap">
                 <Shield size={18} className="text-rg-primary/60" />
                 Segurança da Informação
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 whitespace-nowrap">
                 <Zap size={18} className="text-rg-primary/60" />
                 Alta Performance
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 whitespace-nowrap">
                 <Server size={18} className="text-rg-primary/60" />
                 Infraestrutura Resiliente
               </div>
